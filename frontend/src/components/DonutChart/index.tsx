@@ -38,7 +38,7 @@ const DonutChart = () => {
       type="donut"
       height="240"
     />
-  );
+  )
 }
 
 export default DonutChart;
