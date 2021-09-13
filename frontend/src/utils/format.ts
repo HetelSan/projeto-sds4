@@ -10,3 +10,8 @@ export const formatLocalDate = (date: string, pattern: string) => {
     const dtDateOnly = new Date(dt.valueOf() + dt.getTimezoneOffset() * 60 * 1000);
     return format(dtDateOnly, pattern);
 }
+
+export const formatAmount = (amount: number) => {
+    const amountFormated = amount.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    return amountFormated;
+  }
